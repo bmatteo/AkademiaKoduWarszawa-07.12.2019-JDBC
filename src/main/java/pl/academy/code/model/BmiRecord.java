@@ -56,4 +56,6 @@ public class BmiRecord {
     public void setBmi(double bmi) {
         this.bmi = bmi;
     }
+
+
 }
