@@ -1,6 +1,8 @@
 package pl.academy.code;
 
 import pl.academy.code.model.BmiRecord;
+import pl.academy.code.model.BmiRecord2;
+import pl.academy.code.model.Sex;
 import pl.academy.code.repositories.BmiRepository;
 
 import java.util.List;
@@ -24,5 +26,10 @@ public class App {
         for (BmiRecord bmiRecord : dataFromDb) {
             System.out.println(bmiRecord);
         }
+
+        BmiRecord2 jakisRekord = new BmiRecord2();
+        jakisRekord.setSex(Sex.OTHER);
+
+        BmiRepository.connection.close();
     }
 }
